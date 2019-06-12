@@ -5,5 +5,23 @@
  */
 
 module.exports = {
-  plugins: [`gatsby-plugin-styled-components`]
+  siteMetadata: {
+    title: `Kenji Shiroma - Web Developer & Designer`
+  },
+  plugins: [
+    `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`
+      }
+    },
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`
+      }
+    }
+  ]
 }
