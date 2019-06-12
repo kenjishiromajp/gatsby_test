@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
-import Button from '../Button'
+import { Button } from '@material-ui/core'
 
 const Container = styled.div`
   padding: 1rem 1rem;
@@ -19,6 +19,7 @@ const Layout = ({ children }) => (
         <Button><Link to="/">Home</Link></Button>
         <Button><Link to="/about">About</Link></Button>
         <Button><Link to="/my-files">My Files</Link></Button>
+        <Button><Link to="/my-posts">My Posts</Link></Button>
       </Container>
     </Header>
     <main>

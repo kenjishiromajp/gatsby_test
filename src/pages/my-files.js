@@ -1,6 +1,5 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Button from '../components/Button'
 import Layout from '../components/Layout'
 
 export default ({ data: { allFile: { edges } } }) => (
